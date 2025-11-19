@@ -1,33 +1,0 @@
-Loaded 143 documents from /root/project/data/txt_doc_level
-Loading sentence-transformer (for reference/topic encoding)...
-Loaded reference policy text from /root/project/data/ref.txt
-
-Computing document-ref semantic similarity...
-Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.75it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01, 10.31it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 11.18it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.79it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 12.17it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.86it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 13.18it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.69it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 14.22it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 13.14it/s]
-2025-11-19 12:49:04,072 - BERTopic - Embedding - Transforming documents to embeddings.
-Doc-ref similarity range: 0.44519370794296265 to 0.6026599407196045
-Loading sentence-transformer embedding model...
-Fitting BERTopic model...
-Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.45it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.61it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  3.82it/s]Batches:  80%|████████  | 4/5 [00:01<00:00,  4.02it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  5.07it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s]
-2025-11-19 12:49:05,430 - BERTopic - Embedding - Completed ✓
-2025-11-19 12:49:05,431 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
-/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
-
-The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
-
-2025-11-19 12:49:50,471 - BERTopic - Dimensionality - Completed ✓
-2025-11-19 12:49:50,472 - BERTopic - Cluster - Start clustering the reduced embeddings
-2025-11-19 12:49:50,484 - BERTopic - Cluster - Completed ✓
-2025-11-19 12:49:50,488 - BERTopic - Representation - Fine-tuning topics using representation models.
-2025-11-19 12:49:53,756 - BERTopic - Representation - Completed ✓
-Finished BERTopic training.
-
-[Strict] Identified digital-related topics:
-Traceback (most recent call last):
-  File "/root/project/bertopic_pipeline.py", line 481, in <module>
-    main()
-  File "/root/project/bertopic_pipeline.py", line 463, in main
-    df_scores = compute_digital_scores(
-  File "/root/project/bertopic_pipeline.py", line 348, in compute_digital_scores
-    raise ValueError("No digital topics identified; please check DIGITAL_KEYWORDS or the strict rules.")
-ValueError: No digital topics identified; please check DIGITAL_KEYWORDS or the strict rules.

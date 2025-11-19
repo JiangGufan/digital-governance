@@ -39,7 +39,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =========================
 DATA_DIR = Path("/root//project/data/txt_doc_level")   # 143 个报告 txt 所在目录
 REF_PATH = Path("/root//project/data/ref.txt")         # 可选的参考政策文本（如果没有就留空路径）
-OUTPUT_DIR = Path("/root//project/data/output")
+OUTPUT_DIR = Path("/root//project/output")
 EMB_PATH = "/root/project/models/text2vec-base-chinese" # Sentence-BERT 模型路径（如果没有就用在线模型）
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
