@@ -1,0 +1,8 @@
+models/
+data/
+output/
+*.bin
+*.safetensors
+*.pth
+*.pt
+*.ckpt
