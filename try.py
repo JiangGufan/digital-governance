@@ -30,8 +30,9 @@
 
 import pandas as pd
 
-INPUT = "/root/project/data/output/digital_attention_scores.csv"
-OUTPUT = "/root/project/result.csv"
+# INPUT = "/root/project/data/output/digital_attention_scores.csv"
+INPUT = "/root/project/output/digital_attention_scores.csv"
+OUTPUT = "/root/project/result2.csv"
 
 # 1. 读取数据
 df = pd.read_csv(INPUT)
