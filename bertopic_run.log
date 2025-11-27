@@ -78,3 +78,243 @@ digital_index_combined range: 0.03517024219036102 to 0.708281775720268
 
 Saved scores to: /root/project/output/digital_attention_scores.csv
 Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref3.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.53it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01, 10.06it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 10.98it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.52it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 11.89it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.54it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 13.06it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.64it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 14.09it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 12.95it/s]
+2025-11-20 11:19:20,241 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.44519370794296265 to 0.6026599407196045
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.51it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.62it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  3.90it/s]Batches:  80%|████████  | 4/5 [00:01<00:00,  4.13it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  5.20it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.49it/s]
+2025-11-20 11:19:21,592 - BERTopic - Embedding - Completed ✓
+2025-11-20 11:19:21,592 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 11:20:06,278 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 11:20:06,278 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 11:20:06,374 - BERTopic - Cluster - Completed ✓
+2025-11-20 11:20:06,378 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 11:20:10,047 - BERTopic - Representation - Completed ✓
+2025-11-20 11:20:11,218 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.0 to 0.6832228941780352
+
+Saved scores to: /root/project/output/digital_attention_scores.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref4.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.76it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01, 10.05it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 10.88it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.57it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 12.26it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.80it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 13.28it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.80it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 14.42it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 13.16it/s]
+2025-11-20 15:25:59,566 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.42019665241241455 to 0.6110865473747253
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.50it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.80it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  4.03it/s]Batches:  80%|████████  | 4/5 [00:00<00:00,  4.20it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.62it/s]
+2025-11-20 15:26:00,890 - BERTopic - Embedding - Completed ✓
+2025-11-20 15:26:00,890 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 15:26:24,672 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 15:26:24,673 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 15:26:24,685 - BERTopic - Cluster - Completed ✓
+2025-11-20 15:26:24,689 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 15:26:27,961 - BERTopic - Representation - Completed ✓
+2025-11-20 15:26:28,872 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.03517024219036102 to 0.708281775720268
+
+Saved scores to: /root/project/output/digital_attention_scores4.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref2wChar.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:02,  7.95it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01,  9.78it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 10.24it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.03it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 11.71it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.36it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 12.83it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.38it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 13.91it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 12.65it/s]
+2025-11-20 15:30:04,144 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.42019665241241455 to 0.6110865473747253
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.39it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.58it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  3.81it/s]Batches:  80%|████████  | 4/5 [00:01<00:00,  4.06it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  5.11it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s]
+2025-11-20 15:30:05,492 - BERTopic - Embedding - Completed ✓
+2025-11-20 15:30:05,492 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 15:30:46,872 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 15:30:46,872 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 15:30:46,886 - BERTopic - Cluster - Completed ✓
+2025-11-20 15:30:46,889 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 15:30:50,159 - BERTopic - Representation - Completed ✓
+2025-11-20 15:30:51,200 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.03517024219036102 to 0.708281775720268
+
+Saved scores to: /root/project/output/digital_attention_scores2w.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref4.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.69it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01,  9.96it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 10.83it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.54it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 12.19it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.78it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 13.23it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.72it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 14.35it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 13.07it/s]
+2025-11-20 15:50:06,226 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.42019665241241455 to 0.6110865473747253
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.56it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.77it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  3.98it/s]Batches:  80%|████████  | 4/5 [00:00<00:00,  4.18it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.59it/s]
+2025-11-20 15:50:07,529 - BERTopic - Embedding - Completed ✓
+2025-11-20 15:50:07,529 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 15:50:34,971 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 15:50:34,972 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 15:50:34,985 - BERTopic - Cluster - Completed ✓
+2025-11-20 15:50:34,988 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 15:50:38,155 - BERTopic - Representation - Completed ✓
+2025-11-20 15:50:39,163 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.03517024219036102 to 0.708281775720268
+
+Saved scores to: /root/project/output/digital_attention_scores4.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref2wChar.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.84it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01, 10.06it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 10.75it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.33it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 12.02it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.35it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 12.60it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.20it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 13.88it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 12.77it/s]
+2025-11-20 15:55:41,700 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.42019665241241455 to 0.6110865473747253
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.59it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.86it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  4.09it/s]Batches:  80%|████████  | 4/5 [00:00<00:00,  4.29it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.69it/s]
+2025-11-20 15:55:42,977 - BERTopic - Embedding - Completed ✓
+2025-11-20 15:55:42,977 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 15:56:23,890 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 15:56:23,891 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 15:56:23,978 - BERTopic - Cluster - Completed ✓
+2025-11-20 15:56:23,982 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 15:56:27,477 - BERTopic - Representation - Completed ✓
+2025-11-20 15:56:28,600 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.03517024219036102 to 0.708281775720268
+
+Saved scores to: /root/project/output/digital_attention_scores2w.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
+nohup: ignoring input
+Loaded 143 documents from /root/project/data/txt_doc_level
+
+Keyword statistics:
+  total kw_count range: 0.0 to 11.0
+  kw_density range: 0.0 to 0.000760841998478316
+Loading sentence-transformer (for reference/topic encoding)...
+Loaded reference policy text from /root/project/data/ref.txt
+
+Computing document-ref semantic similarity...
+Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:01,  8.78it/s]Batches:  17%|█▋        | 3/18 [00:00<00:01, 10.33it/s]Batches:  28%|██▊       | 5/18 [00:00<00:01, 11.17it/s]Batches:  39%|███▉      | 7/18 [00:00<00:00, 11.54it/s]Batches:  50%|█████     | 9/18 [00:00<00:00, 12.18it/s]Batches:  61%|██████    | 11/18 [00:00<00:00, 12.83it/s]Batches:  72%|███████▏  | 13/18 [00:01<00:00, 13.29it/s]Batches:  83%|████████▎ | 15/18 [00:01<00:00, 13.87it/s]Batches:  94%|█████████▍| 17/18 [00:01<00:00, 14.35it/s]Batches: 100%|██████████| 18/18 [00:01<00:00, 13.19it/s]
+2025-11-20 16:07:40,714 - BERTopic - Embedding - Transforming documents to embeddings.
+Doc-ref similarity range: 0.44519370794296265 to 0.6026599407196045
+Loading sentence-transformer embedding model...
+Fitting BERTopic model...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:01,  3.47it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  3.61it/s]Batches:  60%|██████    | 3/5 [00:00<00:00,  3.77it/s]Batches:  80%|████████  | 4/5 [00:01<00:00,  4.03it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  5.09it/s]Batches: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s]
+2025-11-20 16:07:42,063 - BERTopic - Embedding - Completed ✓
+2025-11-20 16:07:42,063 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+/root/miniconda3/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning:
+
+The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+
+2025-11-20 16:08:16,169 - BERTopic - Dimensionality - Completed ✓
+2025-11-20 16:08:16,170 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-11-20 16:08:16,183 - BERTopic - Cluster - Completed ✓
+2025-11-20 16:08:16,186 - BERTopic - Representation - Fine-tuning topics using representation models.
+2025-11-20 16:08:19,423 - BERTopic - Representation - Completed ✓
+2025-11-20 16:08:20,466 - BERTopic - WARNING: When you use `pickle` to save/load a BERTopic model,please make sure that the environments in which you saveand load the model are **exactly** the same. The version of BERTopic,its dependencies, and python need to remain the same.
+Finished BERTopic training.
+
+[Strict] Identified digital-related topics:
+
+[compute_digital_scores] WARNING: No digital topics identified.
+=> 当前使用 doc_sem_sim_norm 和 kw_density_norm 共同作为数字化治理关联度指数。
+
+Computed scores for 143 documents (doc_sem_sim + kw_density).
+digital_index_combined range: 0.0 to 0.6832228941780352
+
+Saved scores to: /root/project/output/digital_attention_scores.csv
+Saved BERTopic model to: /root/project/output/bertopic_model
