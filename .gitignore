@@ -1,5 +1,4 @@
 models/
-data/
 output/
 *.bin
 *.safetensors
