@@ -67,7 +67,7 @@ models/
 models/text2vec-base-chinese/
 ```
 
-BERTopic 支持本地 embedding 模型，推荐方式参考官方文档（https://github.com/MaartenGr/BERTopic）。
+BERTopic 支持本地 embedding 模型，这里我们使用此模型建模。
 
 #### **1. 下载 Sentence-Transformers 模型（推荐）**
 
